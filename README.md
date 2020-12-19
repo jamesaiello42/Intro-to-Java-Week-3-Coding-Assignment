@@ -1,1 +1,2 @@
-# Intro-to-Java-Week-3-Coding-Assignment
+# Promineo Tech Java Week Three Project
+See the Week Three Coding Assignment.docx file for the description of the project.
