@@ -50,7 +50,7 @@ public class App {
 		for (int i = 0; i < names.length; i++)
 			nameLengths[i] = names[i].length();
 		
-		// Calculate the average of nameLengths
+		// Calculate the sum of nameLengths
 		for (int i = 0; i < nameLengths.length; i++)
 			nameLengthSum += nameLengths[i]; 
 
@@ -62,7 +62,7 @@ public class App {
 		// Function to print first and last names together
 		System.out.println("Printing what step 8 requested: " + fullName("James", "Aiello"));
 		
-		// Testing two arrays on the function that show true if array sum is greater or equal to 100
+		// Testing two arrays on the function that show true if array sum is greater than 100
 		System.out.println("\nPrinting all results of testing step 9's function: ");
 		System.out.println(isSumGtrThan100(testArray));
 		System.out.println(isSumGtrThan100(testArray2));
@@ -104,7 +104,7 @@ public class App {
 		return firstName + " " + lastName;	
 	}
 	
-	// Returns true or false if array sums to 100 or more
+	// Returns true if array sums to more than 100
 	public static Boolean isSumGtrThan100(int array[])
 	{
 		int sum = 0;
@@ -113,8 +113,8 @@ public class App {
 		for (int i = 0; i < array.length; i++)
 			sum += array[i];
 		
-		// Check if 100 or more;
-		return sum >= 100;
+		// Check if more than 100
+		return sum > 100;
 	}
 	
 	// Function calculates array of doubles average
